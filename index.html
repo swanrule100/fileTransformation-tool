@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>File Transformation Tool</h1>
-      <input type="file" id="fileInput" accept=".jpg,.jpeg,.pdf,.docx" />
-      <button id="convertBtn">Convert</button>
-      <a id="downloadLink" style="display: none">Download</a>
-      <div id="pdfPreview" style="display: none"></div>
+    <div class="nav">
+      <div class="log">FTT</div>
     </div>
-
+    <div class="cont">
+      <h2>
+        Transform files effortlessly with our easy-to-use tool—convert, edit,
+        and manage files in seconds, anytime, anywhere!
+      </h2>
+      <div class="container">
+        <h1>File Transformation Tool</h1>
+        <input type="file" id="fileInput" accept=".jpg,.jpeg,.pdf,.docx" />
+        <button id="convertBtn">Convert</button>
+        <a id="downloadLink" style="display: none">Download</a>
+        <div id="pdfPreview" style="display: none"></div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.1.0/docx.js"></script>

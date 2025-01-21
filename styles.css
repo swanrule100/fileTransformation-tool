@@ -1,26 +1,75 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(60, 60, 146);
+  align-items: center;
+  border-bottom: 1px solid rgb(57, 49, 49);
+  box-shadow: 10px gray;
+}
+.log {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: calc(100vh - 50px);
+  background: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+  background-color: rgb(255, 255, 255);
+}
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: rgb(0, 38, 255);
+}
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
+  width: 50%;
+  background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.279);
 }
 
 h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 }
-
+::-webkit-file-upload-button {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+::-webkit-file-upload-button:hover {
+  transition: 0.4s ease-in-out;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+}
 input[type="file"] {
   display: block;
   margin: 20px auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: gray;
 }
 
 button {
@@ -28,7 +77,10 @@ button {
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #28a745;
+  font-family: monospace;
   color: white;
+  font-weight: 900;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -42,4 +94,15 @@ a {
   display: block;
   text-align: center;
   margin-top: 20px;
+}
+@media (max-width: 460px) {
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
